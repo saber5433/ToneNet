@@ -68,7 +68,7 @@ def _preprocess_numpy_input(x, data_format, mode):
     std = [0.229, 0.224, 0.225]
   else:
     if data_format == 'channels_first':
-      # 'RGB'->'BGR' 
+      # 'RGB'->'BGR'
       if x.ndim == 3:
         x = x[::-1, ...]
       else:
