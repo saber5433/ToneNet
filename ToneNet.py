@@ -167,7 +167,7 @@ def main():
     channels = 3
     lr = 0.001
     activation = 'relu'
-    epochs = 100
+    epochs = 50
     batch_size = 128
     ToneNet(train_data,train_label,test_data,test_label, wigth,heigth,channels,lr,activation,epochs,batch_size)
 
