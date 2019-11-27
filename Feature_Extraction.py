@@ -14,8 +14,9 @@ def melspectrogram_feature(audio_path, save_path):
     
     plt.figure(figsize=(2.25, 2.25))
     librosa.display.specshow(librosa.power_to_db(S,ref=np.max),
-                             sr=sr,
-                              fmax=350)
+                            sr=sr,
+                            fmin=50,
+                            fmax=350)
     
     plt.gca().xaxis.set_major_locator(plt.NullLocator()) 
     plt.gca().yaxis.set_major_locator(plt.NullLocator()) 
